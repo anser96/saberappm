@@ -1,0 +1,21 @@
+.caption {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+blockquote {
+  border-left: 5px solid #3ab5e3;
+}
+
+.colorp {
+  background-color: #004393;
+}
+
+.colorb {
+  background-color: #3ab5e3;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #3ab5e3;
+}

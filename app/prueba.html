@@ -1,38 +1,201 @@
 <!DOCTYPE html>
- <html>
-   <head>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/master.css">
 
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-     <title>Prueba</title>
-   </head>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prueba</title>
+</head>
 
-   <body>
-<div class="navbar-fixed">
+<body class="light-blue lighten-5">
+  <div class="navbar-fixed">
 
-  <nav>
-   <div class="nav-wrapper teal lighten-1">
-     <a href="#" class="brand-logo left">SaberApp</a>
-     <ul id="nav" class="right">
-       <li><a href="../index.html">Inicio</a></li>
-       <li><a href="matriz.html">Matriz de Referencia</a></li>
-       <li><a href="ejemplo.html">Ejemplos</a></li>
-       <li class="active"><a href="prueba.html">Prueba</a></li>
-       <li><a href="respuestas.html">Respuestas</a></li>
-     </ul>
-   </div>
- </nav>
-</div>
+    <nav>
+      <div class="nav-wrapper colorp">
+        <a href="#" class="brand-logo left">SaberApp</a>
+        <ul id="nav" class="right">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="matriz.html">Matriz de Referencia</a></li>
+          <li><a href="ejemplo.html">Ejemplos</a></li>
+          <li class="active"><a href="prueba.html">Prueba</a></li>
+          <li><a href="respuestas.html">Respuestas</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="section">
+
+    <div class="container white z-depth-4 ">
+      <div class="row">
+        <div class="col s10 push-s1">
+          <h5 class="center-align">PRUEBA DE LENGUAJE</h5>
+          <div class="divider"></div>
+          <form name="quizForm" id="quizForm" action="javascript:calcScore();">
+            <p class="caption">Responde las preguntas 1 a 6 de acuerdo con el siguiente texto</p>
+            <h5 class="center-align">HADAS ¿QUIÉNES SON?</h5>
+            <p align="justify">
+              Cuando se habla de hadas, uno siempre piensa en una bondadosa mujer, vestida con una tú-
+              nica azul larga hasta los pies, tocada con un sombrero en forma de cono que cubre su rubia
+              cabellera, y con una varita mágica en la mano, a punto para satisfacer cualquier deseo; así
+              es como esos famosísimos personajes se ven representados en los cuentos y en las historias
+              infantiles.<br><br>
+              Pero las hadas de verdad son otra cosa. Las hay morenas y rubias, jóvenes y ancianas, feas
+              y hermosas, elegantes y pordioseras, y en cuanto al carácter… más vale no fiarse demasiado,
+              porque no hay nadie más imprevisible que un hada, y nada resulta más peligroso que su mal
+              humor.<br><br>
+              En tiempos remotos, cuando aún era fácil encontrar alguna en el bosque o en el fondo de una
+              cueva, los hombres procuraban no ofenderlas e incluso las evitaban, porque sabían que estaban
+              tratando con criaturas casi omnipotentes, emparentadas con las diosas y las ninfas de la
+              antigüedad.<br><br>
+              Entre las bisabuelas de las hadas están las “moiras”, divinidades griegas que decidían la suerte
+              de los mortales. La primera, Cloto, hilaba el hilo del destino; la segunda, Láquesis, lo medía,
+              y la tercera, Átropo, lo cortaba. A las tres diosas, hijas de Zeus, que los romanos llamaban
+              también “parcas”, se las representaba como mujeres ancianas y harapientas, y precisamente
+              de ellas provienen las famosísimas hadas madrinas, que se reúnen en torno a la cuna de los
+              recién nacidos.<br><br>
+              Otros antepasados ilustres son las fatuas (compañeras de los faunos, capaces de predecir el
+              futuro), las matras, diosas-gallinas que ayudaban a nacer a los niños y predecían su futuro, y
+              las nornas, las moiras escandinavas. Por último, hay que mencionar a las ninfas y a las dríades,
+              figuras mitológicas encantadoras ligadas a los bosques y las aguas, y señoras de la espesura y
+              de las fuentes.<br><br>
+              Todas estas criaturas sobrenaturales han legado algo de sí a las hadas, hasta convertirlas en lo
+              que son para nosotros: mujeres inmortales, dotadas con increíbles poderes, que van y vienen
+              entre su mundo y el nuestro.
+            </p>
+            <blockquote>
+              Tomado de: Lazzarato, Francesca (1995). Hadas. Barcelona: Montena
+            </blockquote>
+
+            <p><b>1.</b> El “Pero”, con el que se inicia el segundo párrafo del texto, permite introducir una información que</p>
+            <p><input name="0" type="radio" id="p0o0" value="0"/>
+              <label for="p0o0" class="grey-text text-darken-4">
+                A. afirma lo anotado en el primer párrafo.
+              </label></p>
+            <p><input name="0" type="radio" id="p0o1" value="1"/>
+              <label for="p0o1" class="grey-text text-darken-4">
+                B.  ejemplifica lo anotado en el primer párrafo.
+              </label></p>
+            <p><input name="0" type="radio" id="p0o2" value="2"/>
+              <label for="p0o2" class="grey-text text-darken-4">
+                C.  explica lo anotado en el primer párrafo.
+              </label></p>
+            <p><input name="0" type="radio" id="p0o3" value="3"/>
+              <label for="p0o3" class="grey-text text-darken-4">
+                D.  contradice lo anotado en el primer párrafo.
+              </label></p>
+
+            <p><b>2.</b> En el texto, la palabra “moiras” se escribe entre comillas con el fin de</p>
+            <p><input name="1" type="radio" id="p1o0" value="0"/>
+              <label for="p1o0" class="grey-text text-darken-4">
+                A. resaltar el nombre con el que se conocían ciertas divinidades griegas.
+              </label></p>
+            <p><input name="1" type="radio" id="p1o1" value="1"/>
+              <label for="p1o1" class="grey-text text-darken-4">
+                B. indicar un tipo de hadas que son más importantes que las hadas madrinas.
+              </label></p>
+            <p><input name="1" type="radio" id="p1o2" value="2"/>
+              <label for="p1o2" class="grey-text text-darken-4">
+                C. indicar que esta palabra se tomó de otro texto que habla sobre las hadas.
+              </label></p>
+            <p><input name="1" type="radio" id="p1o3" value="3"/>
+              <label for="p1o3" class="grey-text text-darken-4">
+                D. mostrar la grandeza y superioridad de las bisabuelas de las hadas.
+              </label></p>
+
+            <p><b>3.</b> En el texto anterior, con la historia de las “moiras” se quiere</p>
+            <p><input name="2" type="radio" id="p2o0" value="0"/>
+              <label for="p2o0" class="grey-text text-darken-4">
+                A. mostrar la tradición de las hadas.
+              </label></p>
+            <p><input name="2" type="radio" id="p2o1" value="1"/>
+              <label for="p2o1" class="grey-text text-darken-4">
+                B. resaltar el origen gitano de las hadas.
+              </label></p>
+            <p><input name="2" type="radio" id="p2o2" value="2"/>
+              <label for="p2o2" class="grey-text text-darken-4">
+                C. explicar los antepasados de las hadas.
+              </label></p>
+            <p><input name="2" type="radio" id="p2o3" value="3"/>
+              <label for="p2o3" class="grey-text text-darken-4">
+                D. describir las divinidades griegas.
+              </label></p>
+
+            <p><b>4.</b> Según el texto, las divinidades griegas que decidían la suerte de los mortales son</p>
+            <p><input name="3" type="radio" id="p3o0" value="0"/>
+              <label for="p3o0" class="grey-text text-darken-4">
+                A. Nereida, Dríada y Tetis.
+              </label></p>
+            <p><input name="3" type="radio" id="p3o1" value="1"/>
+              <label for="p3o1" class="grey-text text-darken-4">
+                B. Eco, Medusa y Fade.
+              </label></p>
+            <p><input name="3" type="radio" id="p3o2" value="2"/>
+              <label for="p3o2" class="grey-text text-darken-4">
+                C. Cloto, Láquesis y Átropo.
+              </label></p>
+            <p><input name="3" type="radio" id="p3o3" value="3"/>
+              <label for="p3o3" class="grey-text text-darken-4">
+                D. Fatuas, Nornas y Moiras.
+              </label></p>
+
+            <p><b>5.</b> El texto trata sobre</p>
+            <p><input name="4" type="radio" id="p4o0" value="0"/>
+              <label for="p4o0" class="grey-text text-darken-4">
+                A. os antepasados ilustres de las hadas.
+              </label></p>
+            <p><input name="4" type="radio" id="p4o1" value="1"/>
+              <label for="p4o1" class="grey-text text-darken-4">
+                B. el origen y las características de las hadas.
+              </label></p>
+            <p><input name="4" type="radio" id="p4o2" value="2"/>
+              <label for="p4o2" class="grey-text text-darken-4">
+                C. las funciones de las divinidades griegas.
+              </label></p>
+            <p><input name="4" type="radio" id="p4o3" value="3"/>
+              <label for="p4o3" class="grey-text text-darken-4">
+                D. los antepasados ilustres de las moiras.
+              </label></p>
+
+            <p><b>6.</b> En el texto anterior, la información se organiza desde</p>
+            <p><input name="5" type="radio" id="p5o0" value="0"/>
+              <label for="p5o0" class="grey-text text-darken-4">
+                A. cómo pensamos las hadas, hasta cómo son para nosotros realmente las hadas.
+              </label></p>
+            <p><input name="5" type="radio" id="p5o1" value="1"/>
+              <label for="p5o1" class="grey-text text-darken-4">
+                B. quiénes eran las hadas en tiempos remotos, hasta quiénes son sus antepasados.
+              </label></p>
+            <p><input name="5" type="radio" id="p5o2" value="2"/>
+              <label for="p5o2" class="grey-text text-darken-4">
+                C. de dónde vienen las hadas, hasta quiénes son los antepasados de las hadas.
+              </label></p>
+            <p><input name="5" type="radio" id="p5o3" value="3"/>
+              <label for="p5o3" class="grey-text text-darken-4">
+                D. quiénes son las bisabuelas de las hadas, hasta cómo son las hadas realmente.
+              </label></p>
+
+              <div id="calificacion"></div>
+
+              <button class="btn waves-effect waves-light colorb right" type="submit" name="enviar">
+                Enviar<i class="material-icons right">send</i>
+              </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
-     <!--Import jQuery before materialize.js-->
-     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-     <script type="text/javascript" src="js/main.js"> </script>
-   </body>
- </html>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/main.js"> </script>
+</body>
+</html>
