@@ -19,3 +19,11 @@ blockquote {
 [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
     background-color: #3ab5e3;
 }
+
+.carousel .indicators .indicator-item {
+    background-color: #4caf50;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: #004393;
+}
