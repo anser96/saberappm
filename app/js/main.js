@@ -1,9 +1,14 @@
-var numQuestions = 6;
+var numQuestions = 36;
 var numOptions = 4;
 var rawScore = 0;
 var actualScore = 0;
 var sinResponder = 0;
-var answers = [3, 0, 2, 2, 1, 0];
+var answers = [
+                3, 0, 2, 2, 1, 0, 0, 1, 3, 2,
+                2, 1, 1, 0, 0, 3, 2, 3, 2, 0,
+                3, 3, 2, 1, 0, 2, 0, 1, 3, 2,
+                0, 1, 3, 3, 3, 0
+              ];
 
 function getAnswer() {
   var question;
