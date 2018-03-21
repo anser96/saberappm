@@ -22,7 +22,6 @@
           <li><a href="matriz.html">Matriz de Referencia</a></li>
           <li><a href="ejemplo.html">Ejemplos</a></li>
           <li class="active"><a href="prueba.html">Prueba</a></li>
-          <li><a href="respuestas.html">Respuestas</a></li>
         </ul>
       </div>
     </nav>
@@ -35,7 +34,7 @@
           <h5 class="center-align">PRUEBA DE LENGUAJE</h5>
           <div class="divider"></div>
           <form name="quizForm" id="quizForm" action="javascript:calcScore();">
-            <!-- <p class="caption">Responde las preguntas 1 a 6 de acuerdo con el siguiente texto</p>
+            <p class="caption">Responde las preguntas 1 a 6 de acuerdo con el siguiente texto</p>
             <h5 class="center-align">HADAS ¿QUIÉNES SON?</h5>
             <p align="justify">
               Cuando se habla de hadas, uno siempre piensa en una bondadosa mujer, vestida con una tú-
@@ -733,7 +732,7 @@
               <p><input name="29" type="radio" id="p29o3" value="3"/>
                 <label for="p29o3" class="grey-text text-darken-4">
                   D. “La gravedad marciana”.
-                </label></p> -->
+                </label></p>
 
               <p class="caption">Responde las siguientes preguntas</p>
 
@@ -898,12 +897,24 @@
                 </div>
               </div>
 
-              <div id="modal2" class="modal">
+              <div id="modal2" class="modal modal-fixed-footer">
                 <div class="modal-content">
-                  <h4>Puntaje</h4>
-                  <h5 id="puntaje"></h5>
+                  <h4>Respuestas</h4>
+
+                  <table class="centered" id="tabla">
+                    <thead>
+                      <tr>
+                        <th>Posición</th>
+                        <th>Clave</th>
+                        <th>Selección</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
                 </div>
                 <div class="modal-footer">
+                  <h5 id="puntaje" class="left"></h5>
                   <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Cerrar</a>
                 </div>
               </div>
@@ -911,7 +922,7 @@
 
               <div class="section">
                 <button class="btn waves-effect waves-light colorb right modal-trigger" data-target="modal1" id="env">Enviar</button>
-                <button class="btn waves-effect waves-light colorb right modal-trigger hide" data-target="modal2" id="punt">Puntaje</button>
+                <button class="btn waves-effect waves-light colorb right modal-trigger hide" data-target="modal2" id="punt">Respuestas</button>
               </div><br><br>
 
           </form>
