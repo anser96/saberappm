@@ -46,7 +46,6 @@ function getAnswers() {
     }
     noCheck = 0;
   }
-  console.log(selections);
 }
 
 var sinResponder = function() {
@@ -67,7 +66,6 @@ var sinResponder = function() {
     noCheck = 0;
   }
 
-  console.log("sinResponder: " + sinResp);
   if (sinResp > 0) {
     m.innerHTML = "Parece que aún tienes preguntas sin responder.";
   } else {
@@ -83,7 +81,6 @@ function calcScore() {
 
   getAnswers();
   actualScore =  Math.round(rawScore / numQuestions * 100);
-  console.log("puntaje: " + actualScore);
   var msg_str ="Su puntuación es %d%%";
   msg_str = msg_str.replace("%d",actualScore).replace("%%","%");
 
